@@ -1,6 +1,9 @@
-#Vitalii Stadnyk
-import sys
+'''
+Vitalii Stadnyk
+Djikstra's Algorithm
+'''
 
+import sys
 # setting weight of the node
 def setValue(node, my_weight):
    my_index = vertexes.index(node)
@@ -42,6 +45,7 @@ prev = [] # stores predecessors for each vertex
 weight = [] # stores weight for each vertex
 
 for line in open(sys.argv[1],'r'):
+    #query.append(list(map(int, line.split())))
     query.append(line.split())
 
 for x in query:
@@ -50,7 +54,7 @@ for x in query:
             vertexes.append(x[i])
             weight.append(float('inf'))
             prev.append(-1)
-
+vertexes.sort()
 for i in vertexes:
     source = i
     setValue(source, 0)
@@ -86,3 +90,4 @@ for i in vertexes:
                 weight.append(float('inf'))
                 prev.append(-1)
                 vertexes.append(x[m])
+    vertexes.sort()
