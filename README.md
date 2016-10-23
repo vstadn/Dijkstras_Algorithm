@@ -1,2 +1,2 @@
 # Dijkstras_Algorithm
-Routing Table for packets transmission in networking. It is using Dijkstra's algorithm to figure out the shortest path between two sources in order to decrease the delay time.
+Routing Table for packets transmission in networking. It is using Dijkstra's algorithm to figure out the shortest path between two sources in order to decrease the delay time.There are two test files given, one with sources represented with numerical value and the other one with characters based value. This algorithm can also be used to find out the shortest path between 2 locations on Earth given the file with distances to intermediate locations.
